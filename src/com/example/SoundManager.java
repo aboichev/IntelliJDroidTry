@@ -70,13 +70,12 @@ public class SoundManager {
      * Plays a Sound
      *
      * @param index - The Index of the Sound to be played
-     * @param speed - The Speed to play not, not currently used but included for compatibility
-     */
-    public static void playSound(int index,float speed)
+    */
+    public static void playSound(int index)
     {
         float streamVolume = mAudioManager.getStreamVolume(AudioManager.STREAM_MUSIC);
         streamVolume = streamVolume / mAudioManager.getStreamMaxVolume(AudioManager.STREAM_MUSIC);
-        mSoundPool.play(mSoundPoolMap.get(index), streamVolume, streamVolume, 1, 0, speed);
+        mSoundPool.play(mSoundPoolMap.get(index), streamVolume, streamVolume, 1, 0, 1);
     }
 
     /**
@@ -95,6 +94,5 @@ public class SoundManager {
         mSoundPoolMap.clear();
         mAudioManager.unloadSoundEffects();
         _instance = null;
-
     }
 }
