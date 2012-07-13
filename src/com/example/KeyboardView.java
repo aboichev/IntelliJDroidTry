@@ -1,16 +1,20 @@
 package com.example;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.ViewGroup;
+import android.preference.PreferenceManager;
+import android.view.*;
 import android.widget.Button;
 import android.widget.RelativeLayout;
 import android.widget.Toast;
-import android.view.View;
 
 public class KeyboardView extends Activity
 {
     public static String PACKAGE_NAME;
+
+    SharedPreferences settings;
 
     SoundManager soundManager;
 
@@ -21,6 +25,7 @@ public class KeyboardView extends Activity
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         PACKAGE_NAME = getApplicationContext().getPackageName();
 
         soundManager = SoundManager.getInstance();
@@ -31,24 +36,38 @@ public class KeyboardView extends Activity
                 RelativeLayout.LayoutParams.MATCH_PARENT,
                 RelativeLayout.LayoutParams.MATCH_PARENT);
 
+        settings = PreferenceManager.getDefaultSharedPreferences(this);
+
         MakeKeyboard(layout);
         setContentView(layout, rlp);
+
+        //settings.getBoolean("perform_updates", false));
+        //settings.getString("updates_interval", "-1"));
+        //settings.getString("welcome_message", "NULL"));
     }
 
-    private void showToastMessage(String msg) {
 
-        Toast toast = Toast.makeText(this, msg, Toast.LENGTH_SHORT);
-        toast.show();
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+
+        startActivity(new Intent(this, SettingsActivity.class));
+        return true;
     }
 
     private View.OnClickListener keyListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
 
-            showToastMessage(String.format("You clicked %s", v.getId()));
+            //showToastMessage(String.format("You clicked %s", v.getId()));
             SoundManager.playSound(v.getId());
         }
     };
+
+    private void showToastMessage(String msg) {
+
+        Toast toast = Toast.makeText(this, msg, Toast.LENGTH_SHORT);
+        toast.show();
+    }
 
     private void MakeKeyboard(ViewGroup parent)
     {
@@ -119,6 +138,5 @@ public class KeyboardView extends Activity
             }
         }
     }
-
 }
 

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+            android:title="@string/select_range_title"
+            android:key="select_range_category">
+
+        <ListPreference
+            android:key="range_lowest_key"
+            android:title="Lowest note"
+            android:summary="Define how often updates will be performed"
+            android:defaultValue="40"
+            android:entries="@array/keysNames"
+            android:entryValues="@array/keysIndexes"
+            android:dependency="perform_updates" />
+
+        <ListPreference
+                android:key="range_lowest_key"
+                android:title="Highest note"
+                android:summary="Define how often updates will be performed"
+                android:defaultValue="108"
+                android:entries="@array/keysNames"
+                android:entryValues="@array/keysIndexes"
+                android:dependency="perform_updates" />
+
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+            android:title="Second Category"
+            android:key="second_category">
+
+        <EditTextPreference
+                android:key="welcome_message"
+                android:title="Welcome Message"
+                android:summary="Define the Welcome message to be shown"
+                android:dialogTitle="Welcome Message"
+                android:dialogMessage="Provide a message"
+                android:defaultValue="Default welcome message" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Another App</string>
+    <string name="select_range_title">Another App</string>
 </resources>

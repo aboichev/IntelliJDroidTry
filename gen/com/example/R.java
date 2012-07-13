@@ -8,104 +8,111 @@
 package com.example;
 
 public final class R {
+    public static final class array {
+        public static final int keysIndexes=0x7f060000;
+        public static final int keysNames=0x7f060001;
+    }
     public static final class attr {
     }
     public static final class color {
-        public static final int black=0x7f050007;
-        public static final int blue2=0x7f050004;
-        public static final int blue25=0x7f050003;
-        public static final int grey=0x7f050002;
-        public static final int orange4=0x7f050006;
-        public static final int orange5=0x7f050005;
-        public static final int white=0x7f050008;
-        public static final int yellow1=0x7f050000;
-        public static final int yellow2=0x7f050001;
+        public static final int black=0x7f070007;
+        public static final int blue2=0x7f070004;
+        public static final int blue25=0x7f070003;
+        public static final int grey=0x7f070002;
+        public static final int orange4=0x7f070006;
+        public static final int orange5=0x7f070005;
+        public static final int white=0x7f070008;
+        public static final int yellow1=0x7f070000;
+        public static final int yellow2=0x7f070001;
     }
     public static final class drawable {
         public static final int black_key=0x7f020000;
         public static final int white_key=0x7f020001;
     }
     public static final class id {
-        public static final int keyC1=0x7f070000;
+        public static final int keyC1=0x7f090000;
     }
     public static final class layout {
         public static final int keyboard=0x7f030000;
-        public static final int main=0x7f030001;
     }
     public static final class raw {
-        public static final int _100=0x7f040000;
-        public static final int _101=0x7f040001;
-        public static final int _102=0x7f040002;
-        public static final int _103=0x7f040003;
-        public static final int _104=0x7f040004;
-        public static final int _105=0x7f040005;
-        public static final int _106=0x7f040006;
-        public static final int _107=0x7f040007;
-        public static final int _108=0x7f040008;
-        public static final int _40=0x7f040009;
-        public static final int _41=0x7f04000a;
-        public static final int _42=0x7f04000b;
-        public static final int _43=0x7f04000c;
-        public static final int _44=0x7f04000d;
-        public static final int _45=0x7f04000e;
-        public static final int _46=0x7f04000f;
-        public static final int _47=0x7f040010;
-        public static final int _48=0x7f040011;
-        public static final int _49=0x7f040012;
-        public static final int _50=0x7f040013;
-        public static final int _51=0x7f040014;
-        public static final int _52=0x7f040015;
-        public static final int _53=0x7f040016;
-        public static final int _54=0x7f040017;
-        public static final int _55=0x7f040018;
-        public static final int _56=0x7f040019;
-        public static final int _57=0x7f04001a;
-        public static final int _58=0x7f04001b;
-        public static final int _59=0x7f04001c;
-        public static final int _60=0x7f04001d;
-        public static final int _61=0x7f04001e;
-        public static final int _62=0x7f04001f;
-        public static final int _63=0x7f040020;
-        public static final int _64=0x7f040021;
-        public static final int _65=0x7f040022;
-        public static final int _66=0x7f040023;
-        public static final int _67=0x7f040024;
-        public static final int _68=0x7f040025;
-        public static final int _69=0x7f040026;
-        public static final int _70=0x7f040027;
-        public static final int _71=0x7f040028;
-        public static final int _72=0x7f040029;
-        public static final int _73=0x7f04002a;
-        public static final int _74=0x7f04002b;
-        public static final int _75=0x7f04002c;
-        public static final int _76=0x7f04002d;
-        public static final int _77=0x7f04002e;
-        public static final int _78=0x7f04002f;
-        public static final int _79=0x7f040030;
-        public static final int _80=0x7f040031;
-        public static final int _81=0x7f040032;
-        public static final int _82=0x7f040033;
-        public static final int _83=0x7f040034;
-        public static final int _84=0x7f040035;
-        public static final int _85=0x7f040036;
-        public static final int _86=0x7f040037;
-        public static final int _87=0x7f040038;
-        public static final int _88=0x7f040039;
-        public static final int _89=0x7f04003a;
-        public static final int _90=0x7f04003b;
-        public static final int _91=0x7f04003c;
-        public static final int _92=0x7f04003d;
-        public static final int _93=0x7f04003e;
-        public static final int _94=0x7f04003f;
-        public static final int _95=0x7f040040;
-        public static final int _96=0x7f040041;
-        public static final int _97=0x7f040042;
-        public static final int _98=0x7f040043;
-        public static final int _99=0x7f040044;
-        public static final int starwars=0x7f040045;
-        public static final int terminator=0x7f040046;
+        public static final int _100=0x7f050000;
+        public static final int _101=0x7f050001;
+        public static final int _102=0x7f050002;
+        public static final int _103=0x7f050003;
+        public static final int _104=0x7f050004;
+        public static final int _105=0x7f050005;
+        public static final int _106=0x7f050006;
+        public static final int _107=0x7f050007;
+        public static final int _108=0x7f050008;
+        public static final int _40=0x7f050009;
+        public static final int _41=0x7f05000a;
+        public static final int _42=0x7f05000b;
+        public static final int _43=0x7f05000c;
+        public static final int _44=0x7f05000d;
+        public static final int _45=0x7f05000e;
+        public static final int _46=0x7f05000f;
+        public static final int _47=0x7f050010;
+        public static final int _48=0x7f050011;
+        public static final int _49=0x7f050012;
+        public static final int _50=0x7f050013;
+        public static final int _51=0x7f050014;
+        public static final int _52=0x7f050015;
+        public static final int _53=0x7f050016;
+        public static final int _54=0x7f050017;
+        public static final int _55=0x7f050018;
+        public static final int _56=0x7f050019;
+        public static final int _57=0x7f05001a;
+        public static final int _58=0x7f05001b;
+        public static final int _59=0x7f05001c;
+        public static final int _60=0x7f05001d;
+        public static final int _61=0x7f05001e;
+        public static final int _62=0x7f05001f;
+        public static final int _63=0x7f050020;
+        public static final int _64=0x7f050021;
+        public static final int _65=0x7f050022;
+        public static final int _66=0x7f050023;
+        public static final int _67=0x7f050024;
+        public static final int _68=0x7f050025;
+        public static final int _69=0x7f050026;
+        public static final int _70=0x7f050027;
+        public static final int _71=0x7f050028;
+        public static final int _72=0x7f050029;
+        public static final int _73=0x7f05002a;
+        public static final int _74=0x7f05002b;
+        public static final int _75=0x7f05002c;
+        public static final int _76=0x7f05002d;
+        public static final int _77=0x7f05002e;
+        public static final int _78=0x7f05002f;
+        public static final int _79=0x7f050030;
+        public static final int _80=0x7f050031;
+        public static final int _81=0x7f050032;
+        public static final int _82=0x7f050033;
+        public static final int _83=0x7f050034;
+        public static final int _84=0x7f050035;
+        public static final int _85=0x7f050036;
+        public static final int _86=0x7f050037;
+        public static final int _87=0x7f050038;
+        public static final int _88=0x7f050039;
+        public static final int _89=0x7f05003a;
+        public static final int _90=0x7f05003b;
+        public static final int _91=0x7f05003c;
+        public static final int _92=0x7f05003d;
+        public static final int _93=0x7f05003e;
+        public static final int _94=0x7f05003f;
+        public static final int _95=0x7f050040;
+        public static final int _96=0x7f050041;
+        public static final int _97=0x7f050042;
+        public static final int _98=0x7f050043;
+        public static final int _99=0x7f050044;
+        public static final int starwars=0x7f050045;
+        public static final int terminator=0x7f050046;
     }
     public static final class string {
-        public static final int app_name=0x7f060000;
+        public static final int app_name=0x7f080000;
+        public static final int select_range_title=0x7f080001;
+    }
+    public static final class xml {
+        public static final int preferences=0x7f040000;
     }
 }
